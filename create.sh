@@ -11,3 +11,6 @@ wget -O ./immich-app/hwaccel.transcoding.yml https://raw.githubusercontent.com/k
 wget -O ./portainer/docker-compose.yml https://raw.githubusercontent.com/kmkarthick92/dockercomposefiles/master/docker-compose-portainer.yml
 wget -O ./dozzle/docker-compose.yml https://raw.githubusercontent.com/kmkarthick92/dockercomposefiles/master/docker-compose-dozzle.yml
 
+docker compose -f ./portainer/docker-compose.yml up -d
+docker compose -f ./dozzle/docker-compose.yml up -d
+docker compose -f ./immich-app/docker-compose.yml up -d
